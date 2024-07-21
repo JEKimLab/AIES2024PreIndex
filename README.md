@@ -56,7 +56,7 @@ python3.8 retrain_dir/retrain_dist.py
 `options` contains the JSON configurations format for learning rate schedule, training transformations, and cutoff plans. Edit the default values of 0.0 according to the desired training/testing scheme. Test transformations are within `retrain/retrain_dist.py`, which can be edited based on the dataset in use.
 
 ## Code Carbon Initialization
-To initialize Code Carbon, for measuring energy and carbon emission when executing `retrain_dir/retrain.py`, run the following command:
+To initialize Code Carbon, for measuring energy and carbon emission when executing `retrain_dir/retrain.py`, run the following command to setup the carbon tracker instance:
 ```bash
 ! codecarbon init
 ```
