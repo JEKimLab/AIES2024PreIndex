@@ -3,16 +3,13 @@
 This is the official implementation of **Estimating Environmental Cost Throughout Model's Adaptive Life Cycle**
 
 ## Installation
-
-To install all the required dependencies and python version in an Ubuntu environment, execute the following command:
+All library versions are within `requirements.txt`. To install all the required dependencies and python version in an Ubuntu environment, execute the following command:
 
 ```bash
 sudo apt update
 sudo apt install python3.8
 pip install -r requirements.txt
 ```
-<br/>
-
 
 ## PreIndex
 To obtain PreIndex for distributional shift:
@@ -40,8 +37,6 @@ python3.8 PreIndex/pre_index.py
   -n_l 0.05
 
 ```
-<br/>
-
 
 ## Retraining
 To retrain a model, run `retrain_dir/retrain_dist.py` in the following format with the path of the original model:
@@ -56,6 +51,9 @@ python3.8 retrain_dir/retrain_dist.py
   -n_tp NOISE_TYPE \
   -n_lvl LEVEL
 ```
+
+## Retraining configurations
+`options` contains the JSON configurations format for learning rate schedule, training transformations, and cutoff plans. Edit the default values of 0.0 according to the desired training/testing scheme. Test transformations are within `retrain/retrain_dist.py`, which can be edited based on the dataset in use.
 
 ## Code Carbon Initialization
 To initialize Code Carbon, for measuring energy and carbon emission when executing `retrain_dir/retrain.py`, run the following command:
