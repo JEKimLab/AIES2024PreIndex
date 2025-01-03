@@ -60,3 +60,14 @@ To initialize Code Carbon, for measuring energy and carbon emission when executi
 ```bash
 ! codecarbon init
 ```
+
+## Citation
+```
+@inproceedings{sangarya2024estimatingenvironmentalcostmodels,
+      title={Estimating Environmental Cost Throughout Model's Adaptive Life Cycle}, 
+      author={Vishwesh Sangarya and Richard Bradford and Jung-Eun Kim},
+      year={2024},
+      booktitle={AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society, 2024}
+      url={https://arxiv.org/abs/2408.01446}, 
+}
+```
